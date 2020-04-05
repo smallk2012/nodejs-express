@@ -5,6 +5,9 @@ express 是nodejs的一个web框架，使用express,能够更便捷的使用node
 
 express-generator是express应用生成器，相当于express 的骨架，进入一个web项目中后，使用express projectname命令，能快速构建projectname这个应用的目录结构。
 
+npm install express --save -g
+npm install express-generator --save -g
+
 1、创建项目，在项目目录输入命令：express，然后输入Y
 2、npm install
 3、npm start
@@ -15,4 +18,12 @@ express-generator是express应用生成器，相当于express 的骨架，进入
 /views：模板文件所在目录，文件格式为.jade，可以认为是view(视图)目录
 app.js 程序main文件，这个是服务器启动的入口
 
+```
+
+```
+npm install body-parser -D
+
+var bodyParser = require('body-parser');/*post方法*/
+app.use(bodyParser.json());// 添加json解析
+app.use(bodyParser.urlencoded({extended: false}));
 ```
