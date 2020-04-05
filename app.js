@@ -11,7 +11,7 @@ var mockRouter = require('./routes/mock');
 var app = express();
 
 // 模板开始
-app.set('views', path.join(__dirname, 'views'));
+//app.set('views', path.join(__dirname, 'views')); //当服务器接口用，这里就不需要了
 app.set('view engine', 'jade');
 // 载入中间件
 app.use(logger('dev'));
